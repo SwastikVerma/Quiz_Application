@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    padding: 0;
+    /*background image or colour*/
+    background: linear-gradient(120deg,rgb(255, 55, 0),blue);
+    height: 100vh;
+    /* hiding scroll */
+    overflow: hidden;
+}
+
+#box{
+    /* centering the box */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    /* padding: 50px 50px; */
+    width: 400px;
+    border-radius: 10px;
+}
+
+
+#box h1{
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid silver;
+}
+
+#box #form{
+    padding: 0px 40px;
+}
+
+#form .text_input{
+    position: relative;
+    border-bottom: 1px solid silver;
+    margin: 30px 0;
+}
+
+#form .text_input input{
+    /* padding: 0 20px; */
+    width: 100%;
+    height: 40px;
+    padding: 0 5px;
+    /* margin: 20px 0px; */
+    border: none;
+    font-size: 16px;
+    background: none;
+    /* text type krne ke baad koi border nhi dikhta hai */
+    outline: none;
+
+}
+
+.text_input label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    /* jo text hai na udhar click krne pr koi response nhi aata instead right side click krne pr typing ka cursor ata hai isliye NONE krne ke baad text pr click krne par bhi typing ka cursor aajata hai  */
+    pointer-events: none;
+}
+
+/* For focus: */
+/* https://www.youtube.com/watch?v=wB9u_w1a6pY */
+
+/* For mroe about :focus */
+/* https://www.youtube.com/watch?v=j68WvpUX41c */
+
+
+
+/* For underline colour */
+.text_input span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(120deg,rgb(255, 55, 0),blue);
+    transition: .5s;
+}
+
+.text_input input:focus~label,
+.text_input input:valid~label{
+    top: -5px;
+    color: rgb(136, 0, 255);
+    transition: .5s;
+    scale: 0.8888;
+}
+
+.text_input input:focus~span::before,
+.text_input input:valid~span::before{
+    width: 100%;
+
+}
+
+
+/* #forgot_pass{
+    margin: -5px 0 20px 5px;
+    color: black;
+    
+} */
+
+#forgot_pass{
+    margin: 5px 0px 10px 5px;
+    padding-left: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+#forgot_pass a{
+    text-decoration: none;
+    color: rgb(136, 0, 255);
+}
+
+#forgot_pass a:hover{
+    color: linear-gradient(120deg,rgb(255, 55, 0),blue);
+    text-decoration: underline;
+}
+
+#button{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 30px;
+    margin: 10px 0px;
+    font-size: 15px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    outline: none;
+}
+
+#button:hover{
+    scale: 1.01;
+    transition: .3s ease-in-out;
+}
+
+#signup{
+    /* text-align: center; */
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
+
+#signup a{
+    color: rgb(136, 0, 255);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#signup a:hover{
+    text-decoration: underline;
+}

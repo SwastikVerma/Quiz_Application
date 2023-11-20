@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz App - Questions</title>
+	<link rel="stylesheet" href="{% static "css/question.css" %}">
+	<link rel="icon" href="images/quizIcon.jpg">
+</head>
+<body>
+	<div class="cont">
+		<div class="container1">
+			<div class="logo">
+				<img src="https://internship.suvenconsultants.com/projects/quizapp/logo.png" width="100%" height="100%">
+			</div>
+			<div id="heading">01:00</div>
+		</div>
+		<div id="indexBody">
+			<div class="container">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<span id="queId">abcd</span>
+					</div>
+					<div class="panel-body">
+						<div class="radio">
+							<input type="radio" name="ansOption" onclick="" id="opt1Id">
+							<label for="opt1Id">Adam Gilchrist</label>
+						</div>
+						<div class="radio">
+							<input type="radio" name="ansOption" onclick="" id="opt2Id">
+							<label for="opt2Id">Sachin Tendulkar</label>
+						</div>
+						<div class="radio">
+							<input type="radio" name="ansOption" onclick="" id="opt3Id">
+							<label for="opt3Id">Robin Uthappa</label>
+						</div>
+						<div class="radio">
+							<input type="radio" name="ansOption" onclick="" id="opt4Id">
+							<label for="opt4Id">Shane Watson</label>
+						</div>
+						<div id="crtAnsDiv" class="alert alert-success" style="display: none;">
+						<span id="crtAns"></span>
+						</div>
+					</div>
+					<div class="panel-footer">
+						<input class="btn btn-success" type="button" id="btnPrev" value="Previous" onclick="previousQuestion()">
+						<input class="btn btn-success" type="button" id="btnNext" value="Next" onclick="nextQuestion()">
+                        <input class="btn btn-success" type="button" id="btnSubmit" value="Submit" onclick="onSubmit()">
+					</div>
+				</div>
+			</div>
+			<div class="status1">
+				<button class="gridnums 1 bd" onclick="changeTo(1)">1</button>
+				<button class="gridnums 2 " onclick="changeTo(2)">2</button>
+				<button class="gridnums 3" onclick="changeTo(3)">3</button>
+				<button class="gridnums 4" onclick="changeTo(4)">4</button>
+				<button class="gridnums 5 bd" onclick="changeTo(5)">5</button>
+				<button class="gridnums 6" onclick="changeTo(6)">6</button>
+				<button class="gridnums 7" onclick="changeTo(7)">7</button>
+				<button class="gridnums 8" onclick="changeTo(8)">8</button>
+				<button class="gridnums 9" onclick="changeTo(9)">9</button>
+				<button class="gridnums 10" onclick="changeTo(10)">10</button>
+				<button class="gridnums 11" onclick="changeTo(11)">11</button>
+				<button class="gridnums 12" onclick="changeTo(12)">12</button>
+				<button class="gridnums 13" onclick="changeTo(13)">13</button>
+				<button class="gridnums 14" onclick="changeTo(14)">14</button>
+				<button class="gridnums 15" onclick="changeTo(15)">15</button>
+				<button class="gridnums 16 bd" onclick="changeTo(16)">16</button>
+				<button class="gridnums 17" onclick="changeTo(17)">17</button>
+				<button class="gridnums 18" onclick="changeTo(18)">18</button>
+				<button class="gridnums 19" onclick="changeTo(19)">19</button>
+				<button class="gridnums 20 bd" onclick="changeTo(20)">20</button>
+
+			</div>
+		</div>
+		<!-- Result -->
+		
+	</div>
+    <script src="{% static "js/script.js" %}"></script>
+</body>
+</html>
+

@@ -1,0 +1,158 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/question.css' %}">
+    <link rel="stylesheet" href="{% static 'css/line_break.css' %}">
+    
+    <title>Result</title>
+</head>
+<body>
+    
+	<div class="cont">
+		<div class="result-page" id="resultBody">
+			<div class="display">
+				<div >
+					<p class="result-bg">
+						Your Result is: <span id="result"></span>/80
+					</p>
+					<p class="result-bg">
+						Percentage: <span id="median"></span>%
+					</p>
+				</div>
+				<div class="status-display">
+					<p class="status"> Total number of Questions : 20 </p>
+					<p class="status" style="display: inline;">Total number of Wrong Answer : <span id="wrong"></span></p>
+                    <p class="status">Total number of Correct Answer : <span id="correct"></span></p>
+                    <p class="status">Total number of Unattempted questions : <span id="Unattempted"></span></p>
+                    
+					
+				</div>
+				<p class="status-footer"></p>
+			</div>
+			
+			<div class="panel-result panel-primary">
+				<div class="panel-heading-result">
+					<span id="queId">QUIZ ANALYSIS </span>
+				</div>
+				<div class="panel-body-result">
+					<table id="resultTable" class="table">
+						<thead>
+							<tr>
+								<th>Q. No.</th>
+								<th>Questions</th>
+								<th>Marks Alloted</th>
+							</tr>
+							<tr class="alert">
+								<td>1</td>
+								<td class="qStatus"></td>
+								<td class="ansStatus"></td>
+							</tr>
+							<tr class="alert">
+								<td>2</td>
+								<td class="qStatus"></td>
+								<td class="ansStatus"></td>
+							</tr>
+							<tr class="alert">
+								<td>3</td>
+								<td class="qStatus"></td>
+								<td class="ansStatus"></td>
+							</tr>
+							<tr class="alert">
+								<td>4</td>
+								<td class="qStatus"></td>
+								<td class="ansStatus"></td>
+							</tr>
+							<tr class="alert">
+								<td>5</td>
+								<td class="qStatus"></td>
+								<td class="ansStatus"></td>
+							</tr>
+							<tr class="alert">
+								<td>6</td>
+								<td class="qStatus"></td>
+								<td class="ansStatus"></td>
+							</tr>
+							<tr class="alert">
+								<td>7</td>
+								<td class="qStatus"></td>
+								<td class="ansStatus"></td>
+							</tr>
+							<tr class="alert">
+								<td>8</td>
+								<td class="qStatus"></td>
+								<td class="ansStatus"></td>
+							</tr>
+							<tr class="alert">
+								<td>9</td>
+								<td class="qStatus"></td>
+								<td class="ansStatus"></td>
+							</tr>
+							<tr class="alert">
+								<td>10</td>
+								<td class="qStatus"></td>
+								<td class="ansStatus"></td>
+							</tr>
+							<tr class="alert">
+								<td>11</td>
+								<td class="qStatus"></td>
+								<td class="ansStatus"></td>
+							</tr>
+							<tr class="alert">
+								<td>12</td>
+								<td class="qStatus"></td>
+								<td class="ansStatus"></td>
+							</tr>
+							<tr class="alert">
+								<td>13</td>
+								<td class="qStatus"></td>
+								<td class="ansStatus"></td>
+							</tr>
+							<tr class="alert">
+								<td>14</td>
+								<td class="qStatus"></td>
+								<td class="ansStatus"></td>
+							</tr>
+							<tr class="alert">
+								<td>15</td>
+								<td class="qStatus"></td>
+								<td class="ansStatus"></td>
+							</tr>
+							<tr class="alert">
+								<td>16</td>
+								<td class="qStatus"></td>
+								<td class="ansStatus"></td>
+							</tr>
+							<tr class="alert">
+								<td>17</td>
+								<td class="qStatus"></td>
+								<td class="ansStatus"></td>
+							</tr>
+							<tr class="alert">
+								<td>18</td>
+								<td class="qStatus"></td>
+								<td class="ansStatus"></td>
+							</tr>
+							<tr class="alert">
+								<td>19</td>
+								<td class="qStatus"></td>
+								<td class="ansStatus"></td>
+							</tr>
+							<tr class="alert">
+								<td>20</td>
+								<td class="qStatus"></td>
+								<td class="ansStatus"></td>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+    <script src="{% static "js/result.js" %}"></script>
+</body>
+</html>
